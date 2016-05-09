@@ -15,6 +15,7 @@
 		041EDBE51A625CED00ECDA48 /* EyeSee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDBE41A625CED00ECDA48 /* EyeSee.swift */; };
 		041EDBF01A625D9200ECDA48 /* Envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEE1A625D9200ECDA48 /* Envelope.png */; };
 		041EDBF11A625D9200ECDA48 /* Swap.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEF1A625D9200ECDA48 /* Swap.png */; };
+		18C4B6721CE038BC007F85E5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C4B6711CE038BC007F85E5 /* AVFoundation.framework */; };
 		19C462E71CD337580041AEBD /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C462E61CD337580041AEBD /* TesseractOCR.framework */; };
 		19C462E91CD3378A0041AEBD /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 19C462E81CD3378A0041AEBD /* tessdata */; };
 		19C462EB1CD337BC0041AEBD /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 19C462EA1CD337BC0041AEBD /* libstdc++.6.0.9.tbd */; };
@@ -46,6 +47,7 @@
 		041EDBE41A625CED00ECDA48 /* EyeSee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeSee.swift; sourceTree = "<group>"; };
 		041EDBEE1A625D9200ECDA48 /* Envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Envelope.png; sourceTree = "<group>"; };
 		041EDBEF1A625D9200ECDA48 /* Swap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swap.png; sourceTree = "<group>"; };
+		18C4B6711CE038BC007F85E5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		19C462E61CD337580041AEBD /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
 		19C462E81CD3378A0041AEBD /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		19C462EA1CD337BC0041AEBD /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
@@ -60,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18C4B6721CE038BC007F85E5 /* AVFoundation.framework in Frameworks */,
 				19C462ED1CD337C60041AEBD /* CoreImage.framework in Frameworks */,
 				19C462EB1CD337BC0041AEBD /* libstdc++.6.0.9.tbd in Frameworks */,
 				19C462E71CD337580041AEBD /* TesseractOCR.framework in Frameworks */,
@@ -79,6 +82,7 @@
 		041EDBC01A625CEC00ECDA48 = {
 			isa = PBXGroup;
 			children = (
+				18C4B6711CE038BC007F85E5 /* AVFoundation.framework */,
 				19C462EC1CD337C60041AEBD /* CoreImage.framework */,
 				19C462EA1CD337BC0041AEBD /* libstdc++.6.0.9.tbd */,
 				041EDBCB1A625CEC00ECDA48 /* Eyesee */,
@@ -203,7 +207,7 @@
 				TargetAttributes = {
 					041EDBC81A625CEC00ECDA48 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = VWX3JCB956;
+						DevelopmentTeam = Y8KX7SH47S;
 					};
 					041EDBDD1A625CED00ECDA48 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -397,7 +401,7 @@
 				INFOPLIST_FILE = LoveInASnap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lstdc++";
-				PRODUCT_BUNDLE_IDENTIFIER = com.abdoassem.LoveInASnap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joannelim.LoveInASnap;
 				PRODUCT_NAME = EyeSee;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LoveInASnap-Bridging-Header.h";
@@ -421,7 +425,7 @@
 				INFOPLIST_FILE = LoveInASnap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-lstdc++";
-				PRODUCT_BUNDLE_IDENTIFIER = com.abdoassem.LoveInASnap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joannelim.LoveInASnap;
 				PRODUCT_NAME = EyeSee;
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "LoveInASnap-Bridging-Header.h";

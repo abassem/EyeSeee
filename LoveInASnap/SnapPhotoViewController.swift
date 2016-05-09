@@ -16,6 +16,8 @@ class SnapPhotoViewController: UIViewController, UITextViewDelegate, UINavigatio
   var activityIndicator:UIActivityIndicatorView!
   var originalTopMargin:CGFloat!
   var audioPlayer: AVAudioPlayer?
+  let synth = AVSpeechSynthesizer()
+  var myUtterance = AVSpeechUtterance(string: "")
 
   
   override func viewDidLoad() {
@@ -62,6 +64,15 @@ class SnapPhotoViewController: UIViewController, UITextViewDelegate, UINavigatio
   }
   
   //audio functions
+  @IBAction func voicePressed(sender: UIButton ) {
+    
+    myUtterance = AVSpeechUtterance(string: textView.text)
+    myUtterance.rate = 0.3
+    synth.speakUtterance(myUtterance)
+    
+  }
+  
+  
   
 
   @IBAction func takePhoto(sender: AnyObject) {
